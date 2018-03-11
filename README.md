@@ -19,9 +19,9 @@ For use with react, I'm planning to make a package that exposes a component you 
 ## Graph Structure
 The chemical structures are stored as json graphs (following [json-graph-specification](https://github.com/jsongraph/json-graph-specification)). See an example graph for methane (CH<sub>4</sub>) [here](./example-structure.json). There are a couple additional requirements.
 ##### Graph
-`directed` should always be `true`. If not present, it will be assumed to be true.
+`directed` should always be `true`. If not present, it will be assumed to be true. If it's not true, it won't change how its rendered.
 ##### Node
-`metadata.type` should be defined, and should be a string with a value of either "element" or "lonepair"
+`type` should be defined, and should be a string with a value of either "element" or "lonepair"
 ##### Edge
 `relation` should be "single", "double", or "triple"
 

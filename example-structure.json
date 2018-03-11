@@ -4,37 +4,27 @@
     {
       "id": 0,
       "label": "C",
-      "metadata": {
-        "type": "element"
-      }
+      "type": "element"
     },
     {
       "id": 1,
       "label": "H",
-      "metadata": {
-        "type": "element"
-      }
+      "type": "element"
     },
     {
       "id": 2,
       "label": "H",
-      "metadata": {
-        "type": "element"
-      }
+      "type": "element"
     },
     {
       "id": 3,
       "label": "H",
-      "metadata": {
-        "type": "element"
-      }
+      "type": "element"
     },
     {
       "id": 4,
       "label": "H",
-      "metadata": {
-        "type": "element"
-      }
+      "type": "element"
     }
   ],
   "edges": [
