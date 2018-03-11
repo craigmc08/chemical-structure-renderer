@@ -3,10 +3,10 @@ import element, { attribute } from '../src/element';
 test('it should create the correct output', () => {
   const element1 = new element(
     'div',
-    [ new attribute('class', 'container'), new attribute('draggable', true) ],
+    [ 'class', 'container', 'draggable', true],
     new element(
       'p',
-      [ new attribute('class', 'text') ],
+      [ 'class', 'text' ],
       'Hello World!',
     ),
   );
