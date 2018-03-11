@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "build": "babel src -d build",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build --ignore *.test.js"
   },
   "repository": {
     "type": "git",
