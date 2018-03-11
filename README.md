@@ -9,9 +9,9 @@ npm i -S chemical-structure-renderer
 ```
 Then you can just include it where you need it.
 ```js
-import { structureToTemplateString } from 'chemical-structure-renderer';
+import structureToSvg from 'chemical-structure-renderer';
 
-const svg = structureToTemplateString(someStructureGraph)
+const svg = structureToSvg(someStructureGraph)
 // Add the svg into your html
 ```
 For use with react, I'm planning to make a package that exposes a component you can pass the graph into. I'll add a link here when it's in-progress.
