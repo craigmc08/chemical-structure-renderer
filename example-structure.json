@@ -30,22 +30,22 @@
   "edges": [
     {
       "source": 0,
-      "relation": "bond-single",
+      "relation": "single",
       "target": 1
     },
     {
       "source": 0,
-      "relation": "bond-single",
+      "relation": "single",
       "target": 2
     },
     {
       "source": 0,
-      "relation": "bond-single",
+      "relation": "single",
       "target": 3
     },
     {
       "source": 0,
-      "relation": "bond-single",
+      "relation": "single",
       "target": 4
     }
   ]
