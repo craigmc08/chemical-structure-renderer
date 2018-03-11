@@ -1,4 +1,4 @@
-import isValidStructure, { isValidNode, isValidEdge } from './structureValidator';
+import isValidStructure, { isValidNode, isValidEdge } from '../src/structureValidator';
 import exampleStructure from '../example-structure.json';
 
 test('nodes with invalid type are not valid', () => {

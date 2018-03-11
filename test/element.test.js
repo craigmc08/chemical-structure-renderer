@@ -1,4 +1,4 @@
-import element, { attribute } from './element';
+import element, { attribute } from '../src/element';
 
 test('it should create the correct output', () => {
   const element1 = new element(
@@ -12,5 +12,5 @@ test('it should create the correct output', () => {
   );
   const output1 = '<div class="container" draggable><p class="text">Hello World!</p></div>';
 
-  expect(root.toString()).toBe(output);
+  expect(element1.toString()).toBe(output1);
 });
