@@ -22,7 +22,8 @@
   "homepage": "https://github.com/craigmc08/chemical-structure-renderer#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "jest": "^22.4.2"
   },
   "jest": {
     "transform": {
