@@ -7,7 +7,7 @@
     "test": "jest",
     "build": "babel src -d build",
     "test-sts": "npm run build && node build/structureTestViewer.js",
-    "prepublish": "npm run build --ignore *.test.js"
+    "prepublishOnly": "npm run build --ignore *.test.js"
   },
   "repository": {
     "type": "git",
