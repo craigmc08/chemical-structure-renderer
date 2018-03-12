@@ -12,14 +12,16 @@ const distances = {
   triple: 50,
 };
 
-function getNodeRelativePositions(nodeEdges, node) {
+function getNodeRelativePositions(node, edges) {
   const { id } = node;
+  const nodeEdges = edges.filter(edge => edge.source === id || edge.target === id);
+  const numNodeEdges = nodeEdges.length;
 
-  return nodeEdges.reduce((obj, edge, i) => {
+  return nodeEdges.reduce((arr, edge, i) => {
     const otherId = edge.source === id ? edge.target : edge.source;
-    obj[id] = { angle: angles[numNodeEdges][i], distance: distances[edge.relation] };
-    return obj;
-  }, {});
+    arr.push({ angle: angles[numNodeEdges][i], distance: distances[edge.relation], id: otherId });
+    return arr;
+  }, []);
 }
 
 export { getNodeRelativePositions };
@@ -27,9 +29,12 @@ export default function nodeRelationParser(nodes, edges) {
   const nodesSurrounding = nodes.map(node => {
     const { id } = node;
 
-    const nodeEdges = edges.filter(edge => edge.source === id || edge.target === id);
-    const numNodeEdges = nodeEdges.length;
+    const relativePositions = getNodeRelativePositions(node, edges);
 
-    const relativePositions = getNodeRelativePositions(nodeEdges, node);
+    return {
+      id,
+      relativePositions,
+    };
   });
+  return nodesSurrounding;
 }
